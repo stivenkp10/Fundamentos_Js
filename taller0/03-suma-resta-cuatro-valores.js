@@ -15,9 +15,8 @@ function calcular() {
     if (inputPrimero.value === "" || inputSegundo.value === "" || inputTercero.value === "" || inputCuarto.value === "") {
         cajaResultado.textContent = "Escrbe los 4 valores";
         return;
-}
-
-// Lo que se escribe en un input es texto: Number() lo convierte en numero.
+} 
+ // Lo que se escribe en un input es texto: Number() lo convierte en numero.
 const primerValor = Number(inputPrimero.value);
 const segundoValor = Number(inputSegundo.value);
 const tercerValor = Number(inputTercero.value);
@@ -30,10 +29,10 @@ const sumaValores = primerValor + segundoValor + tercerValor + cuartoValor;
 const resultadoResta = sumaValores - cuartoValor;
 
 // Mostrar los resultados en la pagina 
-cajaResultado.innerHTML = 
-    "Suma de los 4 valores: <b>" + sumaValores + "</b><br>" + 
+cajaResultado.innerHTML =
     "Suma menos el cuarto valor: <b>" + resultadoResta + "</b>";
-}  
+    "Suma menos el cuarto valor: <b>" + resultadoResta + "</b>";
+}
 
 // Cada vez que se escribe en cuaquiera de los inputs, se vuelve a calcular 
 inputPrimero.addEventListener("input", calcular);
