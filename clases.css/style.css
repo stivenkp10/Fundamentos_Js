@@ -1,0 +1,34 @@
+/*El Asteerisco es el color universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Las etiquetas se invocan por su nombre*/
+
+p{
+    color : #FF0000;
+}
+div{
+    border: 8px solid #00FF00;
+
+}
+
+/*Las clases afectan a  los elementos que contengan la misma clase*/
+
+.clase-caja{
+    border: 8px solid #ff6200;
+    background-color: #07bbdf;
+}
+
+.clase-parrafo{
+    color: #ffffff;
+   
+}
+
+/*Los IDs afectan a los elemnetod especificos por su ID*/
+#fotografia{
+   border: 8px solid #e809bf;
+    width: 300px;
+}
